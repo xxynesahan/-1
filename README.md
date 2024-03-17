@@ -1,2 +1,2 @@
-# laba1
+# proga
 
