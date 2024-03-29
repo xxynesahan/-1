@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+#include <locale.h>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "Russian");
+	float widht, hight, area, perimetr, diagonal;
+	// Ввод данных
+	cout << "Введите ширину прямоугольника" << endl;
+	cin >> widht;
+	cout << "Введите длину прямоугольника" << endl;
+	cin >> hight;
+	if (widht <= 0 || hight <= 0) {
+		cout << "error" << endl;
+		return 0;
+	}
+	area = widht * hight; // Нахoждение площади. Формула S =  a * b
+	perimetr = 2 * (widht + hight); // Нахождение периметра. Формула P = 2 * (a + b)
+	diagonal = sqrt(widht * widht + hight * hight); // Нахождение диагонали. Формула  c = sqrt(a^2 + b^2)
+	cout << "Площадь прямоугольника" << " " << area << endl;
+	cout << "Периметр прямоугольника" << " " << perimetr << endl;
+	cout << "Длина диагонали прямоугольника" << " " << diagonal << endl;
+	return 0;
+}
